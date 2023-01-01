@@ -2,11 +2,12 @@
 # Conditional build:
 %bcond_without	tests	# unit tests
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with	python3 # CPython 3.x module (built from python3-m2r.spec)
 
 Summary:	Markdown and reStructuredText in a single file
 Summary(pl.UTF-8):	Markdown i reStructuredText w pojedynczym pliku
 Name:		python-m2r
+# keep 0.2.x here for python2 support
 Version:	0.2.1
 Release:	5
 License:	MIT
